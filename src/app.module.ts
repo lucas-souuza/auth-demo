@@ -7,13 +7,15 @@ import { UsersModule } from './modules/users/users.module.js';
 
 @Module({
   imports: [
-    TypeOrmModule.forRoot ({
+    TypeOrmModule.forRoot({
       type: 'better-sqlite3',
       database: './database.sqlite',
       autoLoadEntities: true,
       synchronize: true,
-
-    }),AuthModule, UsersModule],
+    }),
+    AuthModule,
+    UsersModule,
+  ],
   controllers: [AppController],
   providers: [AppService],
 })

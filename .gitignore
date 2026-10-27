@@ -57,6 +57,9 @@ pids
 
 #SQL
 *.sql
+*.sqlite
+*.sqlite3
+*.db
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
